@@ -1,18 +1,14 @@
-import { auth } from "@/auth";
-import Profile from "@/components/profile";
+import TopicCreateForm from "@/components/topics/topic-create-form";
 
-const Home = async () => {
-  const session = await auth();
-  console.log(session);
+const Home = () => {
   return (
-    <div>
-      {session?.user ? (
-        <div>{JSON.stringify(session.user)}</div>
-      ) : (
-        <div>Signed Out</div>
-      )}
-
-      <Profile />
+    <div className="grid grid-cols-4 gap-4 p-4">
+      <div className="col-span-3">
+        <h1 className="text-xl m-2">Top Posts</h1>
+      </div>
+      <div>
+        <TopicCreateForm />
+      </div>
     </div>
   );
 };
