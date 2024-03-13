@@ -13,7 +13,7 @@ const Header = () => {
     <Navbar className="shadow mb-6">
       <NavbarBrand>
         <Link href="/" className="font-bold">
-          ReditClone
+          We🩵Learning
         </Link>
       </NavbarBrand>
       <NavbarContent justify="center">

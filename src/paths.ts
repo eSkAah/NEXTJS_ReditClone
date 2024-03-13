@@ -2,7 +2,7 @@ export const paths = {
   homePath() {
     return "/";
   },
-  topicShowPatch(topicSlug: string) {
+  topicShow(topicSlug: string) {
     return `/topics/${topicSlug}`;
   },
   postCreate(topicSlug: string) {
